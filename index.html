@@ -94,6 +94,13 @@ a.card:focus-visible{outline:3px solid var(--pur-bd);outline-offset:2px}
 .box > .bt small{font:400 12.5px/1.3 var(--f-u);color:var(--ink-3)}
 .stack{display:flex;flex-direction:column;gap:10px}
 .attn{margin-top:12px}
+.exam{display:flex;align-items:center;justify-content:space-between;gap:14px;margin:0 0 26px;padding:16px 18px;border-radius:14px;border:1px solid var(--amb-bd);background:var(--amb-bg);color:var(--amb-ink);text-decoration:none;min-height:64px;touch-action:manipulation;transition:transform .12s,box-shadow .12s}
+.exam:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.exam:focus-visible{outline:3px solid var(--amb-bd);outline-offset:2px}
+.exam-t b{display:block;font:600 17px/1.3 var(--f-d)}
+.exam-t span{display:block;font-size:14px;color:var(--amb-sub);margin-top:2px}
+.exam-go{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:14.5px}
+.exam-go svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .footer{margin-top:28px;font-size:13px;color:var(--ink-3)}
 .footer p{margin:4px 0}
 @media (max-width:900px){.cols{grid-template-columns:minmax(0,1fr)}.duration .arr{transform:rotate(90deg)}}
@@ -112,6 +119,11 @@ a.card:focus-visible{outline:3px solid var(--pur-bd);outline-offset:2px}
     </div>
     <button class="theme" id="themeBtn" type="button" aria-label="Түнгі/күндізгі режим"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
   </header>
+
+  <a class="exam" href="https://tazhiyeva.github.io/zhalpy-psikhologiya-emtihan/" target="_blank" rel="noopener">
+    <span class="exam-t"><b>Қорытынды емтиханға дайындық</b><span>30 билет · 90 сұрақ · жауап жоспарлары · кездейсоқ билет тарту</span></span>
+    <span class="exam-go">Ашу <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+  </a>
 
   <main class="map" aria-label="Жалпы психология курсының құрылымы">
     <div class="node-root">Жалпы психология</div>
