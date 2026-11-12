@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Жалпы психология</title>
+<meta name="description" content="Жалпы психология курсының қазақша білім базаларының каталогы: дәрістер психикалық құбылыстардың құрылымы бойынша орналастырылған">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&family=Montserrat:wght@600;700&display=swap">
+<style>
+:root{
+  --page:#F4F3EF; --sheet:#FFFFFF; --ink:#1D1D1B; --ink-2:#55544F; --ink-3:#86847C; --rule:#D9D6CC; --line:#A9A69C;
+  --gray-bg:#ECEAE3; --gray-bd:#B4B2A9; --gray-ink:#3A3936; --gray-sub:#5F5E5A;
+  --pur-bg:#EEEDFE; --pur-bd:#7F77DD; --pur-ink:#3C3489; --pur-sub:#534AB7;
+  --teal-bg:#E1F5EE; --teal-bd:#1D9E75; --teal-ink:#085041; --teal-sub:#0F6E56;
+  --cor-bg:#FAECE7; --cor-bd:#D85A30; --cor-ink:#712B13; --cor-sub:#993C1D;
+  --amb-bg:#FAEEDA; --amb-bd:#BA7517; --amb-ink:#633806; --amb-sub:#854F0B;
+  --f-d:"Montserrat",Arial,system-ui,sans-serif; --f-u:"IBM Plex Sans","PT Sans",system-ui,sans-serif; --f-m:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --page:#161615; --sheet:#1F1F1D; --ink:#ECEAE3; --ink-2:#B9B7AE; --ink-3:#8C8A82; --rule:#34332F; --line:#5F5E5A;
+  --gray-bg:#2C2C2A; --gray-bd:#5F5E5A; --gray-ink:#ECEAE3; --gray-sub:#B4B2A9;
+  --pur-bg:#2B2665; --pur-bd:#7F77DD; --pur-ink:#E6E4FD; --pur-sub:#CECBF6;
+  --teal-bg:#0B3A30; --teal-bd:#1D9E75; --teal-ink:#DDF4EB; --teal-sub:#9FE1CB;
+  --cor-bg:#4F2212; --cor-bd:#D85A30; --cor-ink:#FBE5DC; --cor-sub:#F5C4B3;
+  --amb-bg:#45290A; --amb-bd:#BA7517; --amb-ink:#FBEBD0; --amb-sub:#FAC775;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --page:#161615; --sheet:#1F1F1D; --ink:#ECEAE3; --ink-2:#B9B7AE; --ink-3:#8C8A82; --rule:#34332F; --line:#5F5E5A;
+  --gray-bg:#2C2C2A; --gray-bd:#5F5E5A; --gray-ink:#ECEAE3; --gray-sub:#B4B2A9;
+  --pur-bg:#2B2665; --pur-bd:#7F77DD; --pur-ink:#E6E4FD; --pur-sub:#CECBF6;
+  --teal-bg:#0B3A30; --teal-bd:#1D9E75; --teal-ink:#DDF4EB; --teal-sub:#9FE1CB;
+  --cor-bg:#4F2212; --cor-bd:#D85A30; --cor-ink:#FBE5DC; --cor-sub:#F5C4B3;
+  --amb-bg:#45290A; --amb-bd:#BA7517; --amb-ink:#FBEBD0; --amb-sub:#FAC775;
+  color-scheme:dark}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:400 16px/1.55 var(--f-u)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:28px 16px 56px}
+.top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:26px}
+.eyebrow{font:500 12px/1.4 var(--f-m);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:0 0 8px}
+h1{font:700 clamp(28px,5vw,42px)/1.1 var(--f-d);margin:0}
+.lede{color:var(--ink-2);margin:12px 0 0;max-width:62ch}
+.theme{flex:0 0 auto;width:44px;height:44px;border-radius:12px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink-2);cursor:pointer;display:grid;place-items:center;touch-action:manipulation}
+.theme svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.progress{display:flex;align-items:center;gap:12px;margin:18px 0 0;font-size:14px;color:var(--ink-2)}
+.bar{flex:0 1 240px;height:6px;border-radius:3px;background:var(--rule);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--pur-bd)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--ink-2);margin:10px 0 0}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend b{display:inline-block;width:22px;height:14px;border-radius:4px;border:1.5px solid var(--ink-3)}
+.legend b.soon{border-style:dashed;background:transparent}
+.legend b.live{background:var(--gray-bg)}
+
+.map{display:grid;gap:0}
+.node-root{justify-self:center;background:var(--gray-bg);border:1px solid var(--gray-bd);color:var(--gray-ink);border-radius:12px;padding:12px 28px;font:600 17px/1.3 var(--f-d);text-align:center}
+.stem{justify-self:center;width:1.5px;height:26px;background:var(--line);position:relative}
+.stem::after{content:"";position:absolute;left:50%;bottom:-1px;width:8px;height:8px;border-right:1.5px solid var(--line);border-bottom:1.5px solid var(--line);transform:translateX(-50%) rotate(45deg)}
+.group{border:1.5px dashed var(--rule);border-radius:16px;padding:16px;background:transparent}
+.ghead{text-align:center;margin:0 0 14px}
+.ghead h2{font:600 17px/1.3 var(--f-d);margin:0}
+.ghead p{margin:3px 0 0;font-size:13.5px;color:var(--ink-2)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.cols{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:stretch}
+.col{display:flex;flex-direction:column;gap:12px}
+.sub{font:500 12px/1.3 var(--f-m);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:6px 2px -4px}
+.duration{display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;color:var(--ink-2);margin:0 0 14px;text-align:center;flex-wrap:wrap}
+.duration i{font-style:normal;color:var(--ink-3)}
+
+.card{position:relative;display:block;text-decoration:none;border-radius:12px;padding:12px 14px 12px 14px;min-height:64px;border:1px solid;touch-action:manipulation;transition:transform .12s,box-shadow .12s}
+.card .n{display:inline-block;font:500 11.5px/1 var(--f-m);letter-spacing:.06em;padding:4px 7px;border-radius:6px;margin-bottom:7px}
+.card .t{display:block;font:600 15.5px/1.3 var(--f-u)}
+.card .d{display:block;font-size:13.5px;line-height:1.4;margin-top:3px}
+.card .go{position:absolute;right:12px;top:11px;font:500 12.5px/1 var(--f-u);display:inline-flex;align-items:center;gap:4px}
+.card .go svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+a.card:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.08)}
+a.card:focus-visible{outline:3px solid var(--pur-bd);outline-offset:2px}
+.card.soon{background:transparent!important;border-style:dashed;cursor:default}
+.card.soon .t{color:var(--ink-2)!important}
+.card.soon .d,.card.soon .go{color:var(--ink-3)!important}
+.card.soon .n{background:var(--rule)!important;color:var(--ink-2)!important}
+.card.note{border-style:dotted}
+
+.k-gray{background:var(--gray-bg);border-color:var(--gray-bd);color:var(--gray-ink)} .k-gray .n{background:var(--gray-bd);color:var(--gray-ink)} .k-gray .d,.k-gray .go{color:var(--gray-sub)}
+.k-pur{background:var(--pur-bg);border-color:var(--pur-bd);color:var(--pur-ink)} .k-pur .n{background:var(--pur-bd);color:#fff} .k-pur .d,.k-pur .go{color:var(--pur-sub)}
+.k-teal{background:var(--teal-bg);border-color:var(--teal-bd);color:var(--teal-ink)} .k-teal .n{background:var(--teal-bd);color:#fff} .k-teal .d,.k-teal .go{color:var(--teal-sub)}
+.k-cor{background:var(--cor-bg);border-color:var(--cor-bd);color:var(--cor-ink)} .k-cor .n{background:var(--cor-bd);color:#fff} .k-cor .d,.k-cor .go{color:var(--cor-sub)}
+.k-amb{background:var(--amb-bg);border-color:var(--amb-bd);color:var(--amb-ink)} .k-amb .n{background:var(--amb-bd);color:#fff} .k-amb .d,.k-amb .go{color:var(--amb-sub)}
+
+.box{border-radius:14px;padding:12px;border:1px solid var(--rule);background:var(--sheet)}
+.box > .bt{font:600 14.5px/1.3 var(--f-u);margin:0 2px 10px;display:flex;justify-content:space-between;gap:8px}
+.box > .bt small{font:400 12.5px/1.3 var(--f-u);color:var(--ink-3)}
+.stack{display:flex;flex-direction:column;gap:10px}
+.attn{margin-top:12px}
+.footer{margin-top:28px;font-size:13px;color:var(--ink-3)}
+.footer p{margin:4px 0}
+@media (max-width:900px){.cols{grid-template-columns:minmax(0,1fr)}.duration .arr{transform:rotate(90deg)}}
+@media (max-width:520px){.group{padding:12px}.node-root{font-size:16px;padding:11px 20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">Қазақша білім базалары · дәрістер каталогы</p>
+      <h1>Жалпы психология</h1>
+      <p class="lede">Әр дәрістің өз сайты бар. Олар силлабустың ретімен емес, психологияның құрылымы бойынша орналасқан: алдымен ғылымның негіздері, сосын психикалық құбылыстардың үш тобы — процестер, күйлер және тұлғаның қасиеттері. Карточканы бассаңыз, сол дәрістің сайты ашылады.</p>
+      <div class="progress"><div class="bar"><i id="pbar"></i></div><span id="ptext"></span></div>
+      <div class="legend"><span><b class="live"></b>Дайын — басып ашуға болады</span><span><b class="soon"></b>Жақында қосылады</span></div>
+    </div>
+    <button class="theme" id="themeBtn" type="button" aria-label="Түнгі/күндізгі режим"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+  </header>
+
+  <main class="map" aria-label="Жалпы психология курсының құрылымы">
+    <div class="node-root">Жалпы психология</div>
+    <div class="stem" aria-hidden="true"></div>
+
+    <section class="group" aria-labelledby="g-found">
+      <div class="ghead"><h2 id="g-found">Психология негіздері</h2><p>ғылымның пәні, әдістері, психиканың табиғаты</p></div>
+      <div class="grid4">
+        <div data-l="1"></div><div data-l="2"></div><div data-l="3"></div><div data-l="4"></div>
+      </div>
+    </section>
+
+    <div class="stem" aria-hidden="true"></div>
+    <div class="node-root">Психикалық құбылыстар</div>
+    <div class="stem" aria-hidden="true"></div>
+
+    <section class="group" aria-label="Психикалық құбылыстардың үш тобы">
+      <p class="duration"><span>Ұзақтығы артады:</span> <b>процесс</b> <i class="arr">→</i> <b>күй</b> <i class="arr">→</i> <b>қасиет</b></p>
+      <div class="cols">
+        <div class="box">
+          <p class="bt">Процестер <small>секундтар, минуттар</small></p>
+          <div class="stack">
+            <p class="sub">Танымдық</p>
+            <div data-l="6"></div><div data-l="7"></div><div data-l="9"></div><div data-l="10"></div>
+            <p class="sub">Эмоциялық</p>
+            <div data-l="11"></div>
+            <p class="sub">Ерік</p>
+            <div data-l="12"></div>
+            <p class="sub">Барлық процеске ілеседі</p>
+            <div data-l="8"></div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="bt">Күйлер <small>сағаттар, күндер</small></p>
+          <div class="stack">
+            <div data-x="emstates"></div>
+            <div data-x="funcstates"></div>
+          </div>
+        </div>
+        <div class="box">
+          <p class="bt">Тұлға және оның қасиеттері <small>жылдар</small></p>
+          <div class="stack">
+            <div data-l="5"></div>
+            <p class="sub">Тұлғаның жеке-дара қасиеттері</p>
+            <div data-l="13"></div><div data-l="14"></div><div data-l="15"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Дәрістердің тақырыптары «Жалпы психология» пәнінің силлабусынан алынды. Сайттар 1-курс студенттеріне арналған.</p>
+  </footer>
+</div>
+
+<script>
+/* Жаңа сайт дайын болғанда тек осы тізімдегі url-ді толтырыңыз. */
+const LECTURES = {
+  1:  {t:"Психология ғылым ретінде", d:"Даму тарихы, пәні, міндеттері, негізгі ұғымдары", k:"gray", url:""},
+  2:  {t:"Зерттеу әдістері", d:"Әдіснама, негізгі және қосалқы әдістер", k:"gray", url:"https://tazhiyeva.github.io/zertteu-adisteri/"},
+  3:  {t:"Психика және сана", d:"Психиканың дамуы, ми, сана мен бейсана", k:"gray", url:"https://tazhiyeva.github.io/psikhika-mi-sana/"},
+  4:  {t:"Іс-әрекет психологиясы", d:"Іс-әрекеттің құрылымы мен түрлері", k:"gray", url:""},
+  5:  {t:"Тұлға және қарым-қатынас", d:"Тұлғаның құрылымы, қарым-қатынас түрлері", k:"cor", url:"https://tazhiyeva.github.io/tulga-psikhologiyasy/"},
+  6:  {t:"Түйсік және қабылдау", d:"Механизмдері, түрлері, қасиеттері, заңдылықтары", k:"pur", url:"https://tazhiyeva.github.io/tuisik-qabyldau/"},
+  7:  {t:"Ес", d:"Түрлері, теориялары, заңдылықтары", k:"pur", url:"https://tazhiyeva.github.io/es-psikhologiyasy/"},
+  8:  {t:"Зейін", d:"Теориялары, түрлері, қасиеттері, физиологиясы", k:"amb", url:"https://tazhiyeva.github.io/zeyin-psikhologiyasy/"},
+  9:  {t:"Ойлау және сөйлеу", d:"Теориялары, түрлері, операциялары, байланысы", k:"pur", url:"https://tazhiyeva.github.io/oilau-psikhologiyasy/"},
+  10: {t:"Қиял", d:"Механизмі, түрлері, жасалу жолдары", k:"pur", url:"https://tazhiyeva.github.io/qiyal-psikhologiyasy/"},
+  11: {t:"Эмоция және сезім", d:"Теориялары, түрлері, құрылымдық компоненттері", k:"pur", url:"https://tazhiyeva.github.io/emotsiya-psikhologiyasy/"},
+  12: {t:"Ерік", d:"Теориялары, құрылымы, ерік сапалары", k:"pur", url:""},
+  13: {t:"Темперамент", d:"Типологиялар, Павловтың ілімі, жүйке жүйесінің қасиеттері", k:"cor", url:""},
+  14: {t:"Мінез", d:"Мінез, тұлға және темперамент арақатынасы", k:"cor", url:""},
+  15: {t:"Қабілет", d:"Нышан, қабілеттің құрылымы мен табиғаты", k:"cor", url:""}
+};
+const EXTRA = {
+  emstates:   {t:"Эмоциялық күйлер", d:"Көңіл-күй, аффект, құмарлық, стресс, фрустрация", k:"teal", url:"https://tazhiyeva.github.io/emotsiya-psikhologiyasy/#s10", tag:"11-дәріс · 10-тарау"},
+  funcstates: {t:"Функционалдық күйлер", d:"Сергектік, ұйқы, шаршау, бейімделу. Силлабуста бөлек дәріс жоқ", k:"teal", url:"", tag:"дәріс жоқ", note:true}
+};
+const ARROW='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+function card(o,label){
+  const live=!!o.url;
+  const inner=`<span class="n">${label}</span><span class="t">${o.t}</span><span class="d">${o.d}</span><span class="go">${live?"Ашу "+ARROW:(o.note?"":"Жақында")}</span>`;
+  return live
+    ? `<a class="card k-${o.k}" href="${o.url}" target="_blank" rel="noopener">${inner}</a>`
+    : `<div class="card soon k-${o.k}${o.note?" note":""}" aria-label="${o.t}: ${o.note?"бөлек дәріс жоқ":"жақында қосылады"}">${inner}</div>`;
+}
+document.querySelectorAll("[data-l]").forEach(el=>{const n=+el.dataset.l;el.outerHTML=card(LECTURES[n],n+"-дәріс")});
+document.querySelectorAll("[data-x]").forEach(el=>{const o=EXTRA[el.dataset.x];el.outerHTML=card(o,o.tag)});
+const all=Object.values(LECTURES), ready=all.filter(o=>o.url).length;
+document.getElementById("pbar").style.width=Math.round(ready/all.length*100)+"%";
+const SUF={1:"і",2:"сі",3:"і",4:"і",5:"і",6:"сы",7:"сі",8:"і",9:"ы",0:"ы"};
+document.getElementById("ptext").textContent=`${all.length} дәрістің ${ready}-${SUF[ready%10]} дайын`;
+(()=>{const r=document.documentElement,b=document.getElementById("themeBtn");
+  try{const s=localStorage.getItem("zp-theme");if(s)r.dataset.theme=s}catch(e){}
+  b.addEventListener("click",()=>{const dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem("zp-theme",r.dataset.theme)}catch(e){}})})();
+</script>
+</body>
+</html>
